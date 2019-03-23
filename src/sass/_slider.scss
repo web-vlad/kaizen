@@ -1,0 +1,51 @@
+.slick-arrow {
+    /*background: rgba(31,31,31,.8);*/
+    background: transparent;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    display: block;
+    width: 26px;
+    height: 46px;
+    top: 50%;
+    margin-top: -33px;
+    text-align: center;
+    cursor: pointer;
+    color: transparent;
+    outline: none;
+    opacity: 0.2;
+    z-index: 2;
+    border: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    @include all-transition();
+    /*&:after {
+        position: relative;
+        display: block;
+        content: '';
+        width: 16px;
+        height: 28px;
+        @include all-transition();
+    }*/
+    &:hover {
+        opacity: 0.9;
+    }
+}
+.slick-prev {
+    @include sprite($s-prev);
+    left: 55px;
+    /*&:after {
+        @include sprite($s-prev);
+    }*/
+}
+.slick-next {
+    @include sprite($s-next);
+    right: 55px;
+    /*&:after {
+        @include sprite($s-next);
+    }*/
+}
